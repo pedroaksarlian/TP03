@@ -15,11 +15,8 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return View();
-    }
-
-    public IActionResult Privacy()
-    {
+        PalabrasAhorcado palabras = new PalabrasAhorcado();
+        ViewBag.palabraUsar = palabras.ObtenerPalabra();
         return View();
     }
 

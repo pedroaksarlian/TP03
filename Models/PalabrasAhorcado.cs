@@ -3,18 +3,22 @@ class PalabrasAhorcado{
 private List <string> palabras;
 
 public PalabrasAhorcado(){
-    this.palabras = new List <string>;
-    this.palabras.Add() = ("AVENTURA");
-    this.palabras.Add() = ("ELEFANTE");
-    this.palabras.Add() = ("ORQUESTA");
-    this.palabras.Add() = ("GUITARRA");
-    this.palabras.Add() = ("MARIPOSA");
-    this.palabras.Add() = ("CHOCOLATE");
-    this.palabras.Add() = ("PRIMAVERA");
-    this.palabras.Add() = ("ASTRONAUTA");
-    this.palabras.Add() = ("COMPUTADORA");
-    this.palabras.Add() = ("ELECTRODOMESTICO");
+    this.palabras = new List <string>();
+    palabras.Add("AVENTURA");
+    palabras.Add("ELEFANTE");
+    palabras.Add("ORQUESTA");
+    palabras.Add("GUITARRA");
+    palabras.Add("MARIPOSA");
+    palabras.Add("CHOCOLATE");
+    palabras.Add("PRIMAVERA");
+    palabras.Add("ASTRONAUTA");
+    palabras.Add("COMPUTADORA");
+    palabras.Add("ELECTRODOMESTICO");
 }
-
-
+public string ObtenerPalabra(){
+    Random random = new Random();
+    int numRandom = random.Next(0,11);
+    string palabraAdivinar = palabras[numRandom];
+    return palabraAdivinar;
+}
 }
