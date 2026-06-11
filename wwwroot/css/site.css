@@ -1,31 +1,35 @@
-html {
-  font-size: 14px;
+header{
+margin: 1%;
+padding: 1%;
+
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+header h1{
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 2%;
+  color: #232020;
+}
+header p
+{
+margin-left: 2%;
+font-size: 25px;
+color: #232020;
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+main{
+text-align: center;
+margin: 1%;
+padding: 1%;
+}
+main h2{
+  font-size: 30px;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+main h3
+{
+font-size: 25px;
 }
 
-body {
-  margin-bottom: 60px;
-}
-
-.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
-  color: var(--bs-secondary-color);
-  text-align: end;
-}
-
-.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
-  text-align: start;
-}
